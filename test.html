@@ -19,6 +19,12 @@
     <div id="content">Loading content...</div>
 
     <script>
+        // Override window.open to suppress popups
+        window.open = function() {
+            console.log('Popup blocked.');
+            return null;
+        };
+
         // Fetch content from the proxy server and display it
         fetch('https://adhesive-rich-iguanacolossus.glitch.me/proxy')
             .then(response => response.text())
