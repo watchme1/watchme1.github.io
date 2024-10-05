@@ -3,50 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Stream Video Player</title>
+    <title>Embed Website</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            background-color: #181818;
-            color: #fff;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #2c2c2c;
-            color: #fff;
+        /* Basic styling to center and adjust the size of the embedded content */
+        #embedded-content {
+            width: 100%;
+            height: 90vh; /* Adjust the height as needed */
             border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #3d3d3d;
-        }
-        a {
-            color: #1E90FF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <button onclick="window.open('https://thestreameast.ai', '_blank')">Open Video in New Tab</button>
-    </div>
-
-    <script>
-        // You can add additional JavaScript here if needed
-        console.log("Page loaded. Button ready to open the website.");
-    </script>
+    <h1>Embedded Stream</h1>
+    <object id="embedded-content" data="https://thestreameast.ai/event/cfb/college-gameday-live-streaming">
+        Your browser does not support the embedded content.
+    </object>
 </body>
 </html>
